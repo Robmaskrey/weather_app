@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather App</title>
+    <title>Map</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -24,15 +24,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <form class="form-inline" action="" method="post" id="search_weather" role="form">
-            <input id="city_search" class="form-control" type="text" placeholder="City...">
+          <form class="form-inline" action="" method="post" id="search_location" role="form">
+            <input id="location_search" class="form-control" type="text" placeholder="Location...">
             <input class="btn btn-primary" type="submit" value="Submit">
           </form>
         </div>
       </div>
     </div>
 
-    <div class="container" id="weather-info">
+    <!-- <div class="container" id="weather-info">
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
 
@@ -63,8 +63,26 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+          <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnYgoysopRxFOHkV7RpRSPx51YN8AcmnE&callback=showMap"
+          async defer></script>
 
 
 
@@ -76,5 +94,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./static/js/app.js">
     </script>
+    <script type="text/javascript" src="./static/js/map.js"></script>
   </body>
 </html>

@@ -4,31 +4,31 @@
       "name" : "Max",
       "salary" : 56000,
       "title" : "Designer",
-      "attendance" : true,
+      "attendance" : true
     },
     {
       "name" : "John",
       "salary" : 85400,
       "title" : "Manager",
-      "attendance" : true,
+      "attendance" : true
     },
     {
       "name" : "Evan",
       "salary" : 48000,
       "title" : "Cook",
-      "attendance" : false,
+      "attendance" : false
     },
     {
       "name" : "Smith",
       "salary" : 58900,
       "title" : "Artist",
-      "attendance" : false,
+      "attendance" : false
     },
     {
       "name" : "Johnson",
       "salary" : 115000,
       "title" : "Data Scientist",
-      "attendance" : true,
+      "attendance" : true
     },
   ]
 }
